@@ -1,0 +1,38 @@
+﻿@model Invoicing.Entities.Invoice
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.InvoiceLineItems != null && Model.InvoiceLineItems.Any())
+        {
+            @foreach (var item in Model.InvoiceLineItems)
+            {
+                <tr>
+                    <td>@item.Description</td>
+                    <td>@string.Format("{0:C}", item.Amount)</td>
+                </tr>
+            }
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>@string.Format("{0:C}", Model.InvoiceLineItems.Sum(i => i.Amount))</strong></td>
+            </tr>
+        }
+        else if (Model != null)
+        {
+            <tr>
+                <td colspan="2">No line items available.</td>
+            </tr>
+        }
+        else
+        {
+            <tr>
+                <td colspan="2">No invoice selected.</td>
+            </tr>
+        }
+    </tbody>
+</table>

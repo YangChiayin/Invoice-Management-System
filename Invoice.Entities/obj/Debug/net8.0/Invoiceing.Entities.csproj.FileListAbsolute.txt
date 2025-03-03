@@ -1,0 +1,14 @@
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoiceing.Entities.deps.json
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoiceing.Entities.runtimeconfig.json
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoiceing.Entities.dll
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoiceing.Entities.pdb
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.csproj.AssemblyReference.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.AssemblyInfoInputs.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.AssemblyInfo.cs
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.dll
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\refint\Invoiceing.Entities.dll
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.pdb
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoiceing.Entities.genruntimeconfig.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\ref\Invoiceing.Entities.dll

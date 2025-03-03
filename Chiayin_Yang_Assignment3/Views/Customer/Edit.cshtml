@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Edit a customer";
+}
+
+@* Using partial view need to add <partial name="_ValidationScriptsPartial" /> here for real-time validation to work *@
+@section scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<h1>Edit a customer</h1>
+<form asp-controller="Customer" asp-action="Edit" method="post" enctype="application/x-www-form-urlencoded">
+    <partial name="_CustomerDetailPartial" />
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Edit</button>
+        <a asp-controller="Customer" asp-action="Index" class="btn btn-primary">Cancel</a>
+    </div>
+</form>
+

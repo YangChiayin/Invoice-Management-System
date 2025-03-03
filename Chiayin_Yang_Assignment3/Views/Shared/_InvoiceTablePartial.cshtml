@@ -1,0 +1,25 @@
+﻿@model Chiayin_Yang_Assignment3.ViewModels.CustomerInvoiceViewModel
+
+<table id="invoicesTable" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Invoice #</th>
+            <th>Due Date</th>
+            <th>Amount Paid</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var invoice in Model.Invoices)
+        {
+            <tr class="@((Model.ActiveInvoice != null && Model.ActiveInvoice.InvoiceId == invoice.InvoiceId) ? "table-primary" : "")">
+                <td>
+                    <a asp-action="Index" asp-route-customerId="@Model.Customer.CustomerId" asp-route-selectedInvoiceId="@invoice.InvoiceId">
+                        @invoice.InvoiceId
+                    </a>
+                </td>
+                <td>@invoice.InvoiceDueDate?.ToString("MM/dd/yyyy")</td>
+                <td>@string.Format("{0:C}", invoice.PaymentTotal)</td>
+            </tr>
+        }
+    </tbody>
+</table>

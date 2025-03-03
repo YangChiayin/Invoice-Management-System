@@ -1,0 +1,158 @@
+﻿@model Chiayin_Yang_Assignment3.ViewModels.CustomerInvoiceViewModel
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Back to Customers -->
+<a href="@Url.Action("Index", "Customer")" class="btn btn-secondary mb-3">Back to Customers</a>
+
+<!-- Customer Address -->
+<div class="row">
+    @if (Model.Customer != null)
+    {
+        <h4 class="col">Address: @Model.Customer.Address1, @Model.Customer.City</h4>
+        <h4 class="col">Terms: @Model.ActiveInvoice?.PaymentTerms?.DueDays days</h4>
+    }
+    else
+    {
+        <p>Customer details are unavailable.</p>
+    }
+</div>
+
+<div class="row">
+    <!-- Left Column: Invoices Table -->
+    <div class="col-md-6">
+        <h2>Invoices</h2>
+        @* <table class="table table-bordered"> *@
+        <table id="invoicesTable" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Invoice #</th>
+                    <th>Due Date</th>
+                    <th>Amount Paid</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var invoice in Model.Invoices)
+                {
+                    <tr class="@((Model.ActiveInvoice != null && Model.ActiveInvoice.InvoiceId == invoice.InvoiceId) ? "table-primary" : "")">
+                        <td>
+                            <a asp-action="Index" asp-route-customerId="@Model.Customer.CustomerId" asp-route-selectedInvoiceId="@invoice.InvoiceId">
+                                @invoice.InvoiceId
+                            </a>
+                        </td>
+                        <td>@invoice.InvoiceDueDate?.ToString("MM/dd/yyyy")</td>
+                        <td>@string.Format("{0:C}", invoice.PaymentTotal)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Add Invoice Form -->
+        <form id="addInvoiceForm" method="post">
+            <input type="hidden" name="CustomerId" value="@Model.Customer.CustomerId" />
+
+            <!-- Invoice Date -->
+            <div class="form-group">
+                <label for="InvoiceDate">Date:</label>
+                <input type="date" name="InvoiceDate" class="form-control" required />
+            </div>
+
+            <!-- Payment Terms Dropdown -->
+            <div class="form-group">
+                <label for="PaymentTermsId">Terms</label>
+                <select name="PaymentTermsId" class="form-control" required>
+                    <option value="">Select payment terms...</option>
+                    @foreach (var term in Model.PaymentTerms)
+                    {
+                        <option value="@term.PaymentTermsId">
+                            @term.Description (@term.DueDays days)
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Invoice</button>
+        </form>
+    </div>
+
+    <!-- Right Column: Line Items -->
+    <div class="col-md-6">
+        @if (Model.ActiveInvoice != null)
+        {
+            <h2>Line items for invoice #@Model.ActiveInvoice.InvoiceId</h2>
+
+            <!-- Partial View for Line Items Table -->
+            <div id="lineItemsTable">
+                @Html.Partial("_LineItemsTablePartial", Model.ActiveInvoice)
+            </div>
+
+            <!-- Add Line Item Form -->
+            <form id="addLineItemForm" method="post">
+                <input type="hidden" name="InvoiceId" value="@Model.ActiveInvoice.InvoiceId" />
+                <div class="form-group">
+                    <label for="Description">Description:</label>
+                    <input type="text" name="Description" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="Amount">Amount:</label>
+                    <input type="number" name="Amount" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Add Line Item</button>
+            </form>
+        }
+        else
+        {
+            <p>Select an invoice to view its details.</p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // AJAX form submission for adding an invoice
+                $("#addInvoiceForm").submit(function (event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+
+            $.ajax({
+                url: '@Url.Action("AddInvoice")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    // Replace the entire table content
+                    $(".table-bordered").first().replaceWith(data);
+                    $('#addInvoiceForm')[0].reset();
+
+                    // Reload the page without any invoice selected
+                    window.location.href = '@Url.Action("Index", "Invoice", new { customerId = Model.Customer.CustomerId })';
+                },
+                error: function (xhr) {
+                    alert(xhr.responseText || 'There was an error adding the invoice.');
+                }
+            });
+        });
+
+        // AJAX form submission for adding a line item
+        $("#addLineItemForm").submit(function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var formData = $(this).serialize(); // Serialize form data
+
+            // AJAX request to add a line item
+            $.ajax({
+                url: '@Url.Action("AddLineItem")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    // Update the line items table with the updated data
+                    $("#lineItemsTable").html(data);
+                    $('#addLineItemForm')[0].reset(); // Reset the form
+                },
+                error: function () {
+                    alert('There was an error adding the line item.');
+                }
+            });
+        });
+    </script>
+}

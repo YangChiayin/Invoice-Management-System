@@ -1,0 +1,42 @@
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.deps.json
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.runtimeconfig.json
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.dll
+C:\Users\Chiayin\Downloads\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.pdb
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.csproj.AssemblyReference.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.AssemblyInfoInputs.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.AssemblyInfo.cs
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.dll
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\refint\Invoice.Entities.dll
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.pdb
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.genruntimeconfig.cache
+C:\Users\Chiayin\Downloads\Invoice.Entities\obj\Debug\net8.0\ref\Invoice.Entities.dll
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.deps.json
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.runtimeconfig.json
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.dll
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.pdb
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.csproj.AssemblyReference.cache
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.AssemblyInfoInputs.cache
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.AssemblyInfo.cs
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.dll
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\refint\Invoice.Entities.dll
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.pdb
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.genruntimeconfig.cache
+C:\Users\Chiayin\source\repos\Prog2230\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\ref\Invoice.Entities.dll
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.deps.json
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.runtimeconfig.json
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.dll
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\bin\Debug\net8.0\Invoice.Entities.pdb
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.csproj.AssemblyReference.cache
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.AssemblyInfoInputs.cache
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.AssemblyInfo.cs
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.csproj.CoreCompileInputs.cache
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.dll
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\refint\Invoice.Entities.dll
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.pdb
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\Invoice.Entities.genruntimeconfig.cache
+D:\Conestoga_Courses\2024_level_3\Microsoft Web Tech\Chiayin_Yang_A3\Invoice.Entities\obj\Debug\net8.0\ref\Invoice.Entities.dll
