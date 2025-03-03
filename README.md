@@ -35,34 +35,6 @@ This repository contains an **ASP.NET Core MVC** application for managing custom
 - **InvoiceLineItem**: Belongs to an invoice and represents a billable item.
 - **PaymentTerms**: Defines payment conditions that can be applied to invoices.
 
-## Installation
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/yangchiayin/chiayin_yang_assignment3.git
-    ```
-
-2. **Navigate to the project directory**:
-    ```bash
-    cd chiayin_yang_assignment3
-    ```
-
-3. **Restore dependencies**:
-    ```bash
-    dotnet restore
-    ```
-
-4. **Update the database connection string in `appsettings.json` if needed**.
-
-5. **Apply migrations to create the database**:
-    ```bash
-    dotnet ef database update
-    ```
-
-6. **Run the application**:
-    ```bash
-    dotnet run
-    ```
-
 ## Usage
 1. Navigate to the **Home Page**.
 2. Access the **Customers Page** to view and manage customers.
