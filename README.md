@@ -1,4 +1,9 @@
 # Invoice Management System
+![Screenshot 2025-03-03 001417](https://github.com/user-attachments/assets/af8dbbbf-2419-4be4-aa3d-7a46fe2ca522)
+![Screenshot 2025-03-03 001443](https://github.com/user-attachments/assets/82ab8018-ec47-4b6c-8dec-2c2c576601ad)
+![Screenshot 2025-03-03 001458](https://github.com/user-attachments/assets/901d95f0-0978-40a2-91f0-9d74431dada2)
+![Screenshot 2025-03-03 001512](https://github.com/user-attachments/assets/42e10e94-6bb2-499f-93d6-747e5901e00f)
+![Screenshot 2025-03-03 001520](https://github.com/user-attachments/assets/442bdd7b-bfe7-4f5b-bb31-17f86f7431cb)
 
 ## Project Overview
 This repository contains an **ASP.NET Core MVC** application for managing customer invoices. The system allows users to track customers, create invoices, and manage invoice line items in a structured and user-friendly interface.
